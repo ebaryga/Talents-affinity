@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>TalentsAffinity - Manager</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/ta.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body id="bodyManager">
+
+<header id="nav-down">
+<div class="navbar-fixed">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <div id="partieGauche">
+        <a href="." class="brand-logo left"><img src="img/logoTA.png" id="logoTA" ></a>
+      </div>
+      <a href="#" class="button-collapse">
+        <i class="material-icons" id="btn_navigation" onclick="openNav()">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="coindesdsi.html">Coin des DSI</a></li>
+        <li><a href="https://medium.com/@TalentsAffinity_53620">Blog</a></li>
+        <li><a href="contact.html" id="btn_contact">Contact</a></li>
+      </ul>
+      <ul class="tabs1 tabs-transparent">
+        <li class="tab1"><a class="active" href="manager.html">Manager</a></li>
+        <li class="tab1"><a href="rh.html">RH</a></li>
+        <li class="tab1"><a href="ccm.html">Comment ça marche ?</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content" id="mobiletest">
+    <a href="quisommesnous.html">Qui sommes nous ?</a></li>
+    <a href="tarifs.html">Tarifs</a></li>
+    <a href="coindudsi.html">Coin du DSI</a></li>
+    <a href="">Blog</a></li>
+    <a href="contact.html">Contact</a></li>
+  </div>
+</div>
+
+<aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/talentsaffinity" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/TalentsAffinity" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/talents-affinity" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+</aside>
+
+<div class="mailContact">
+  <p>contact@freshpigment.com</p>
+</div>
+
+<div id="bgmanager" class="parallax"></div>
+
+<div id="premierChoix" class="container">
+  <div class="section no-pad-bot">
+        <p> Talents Affinity vous accompagne dans la gestion de votre équipe et le blocage des potentiels. 
+        <br>
+        Découvrez l'efficacité de Talents Affinity vis à vis des différents enjeux liés au management.</p>
+  </div>
+  <div id="choixSection1" class="choix_Critere">
+  <h5>A quel enjeux souhaitez vous répondre </h5>
+  <form id="ChoixIndividuelCollectif" action="#">
+
+      <input onchange="affichageDivSection2()" name="group1" type="radio" id="individuel" />
+      <label for="individuel">Individuel</label>
+
+      <input onchange="affichageDivSection2()" name="group1" type="radio" id="collectif" />
+      <label for="collectif">Collectif</label>
+
+  </form>
+  </div>
+</div>
+
+<div id="deuxiemeSection">
+  <div id="Individuel_deuxiemeChoix" class="container">
+    <div class="choix_Critere choixSection2">
+    <h5>Choisissez un critère </h5>
+
+    <form id="choixLevierRole" action="#">
+
+        <input onchange="affichageDivSection3()" name="group1" type="radio" id="LevierMotivationChecked" />
+        <label for="LevierMotivationChecked">Identification leviers de motivations</label>
+
+        <input onchange="affichageDivSection3()" name="group1" type="radio" id="RoleChecked" />
+        <label for="RoleChecked">Identification des rôles</label>
+
+    </form>
+    </div>
+  </div>
+
+  <div id="Collectif_deuxiemeChoix" class="container">
+    <div class="choix_Critere choixSection2">
+    <h5>Choisissez un critère </h5>
+
+    <form id="choixFormationsCarthographie" action="#">
+
+        <input onchange="affichageDivSection3()" name="group1" type="radio" id="FormationsChecked" />
+        <label for="FormationsChecked">Anticipation des besoins en formations</label>
+
+        <input onchange="affichageDivSection3()" name="group1" type="radio" id="CarthographieChecked" />
+        <label for="CarthographieChecked">Carthographie</label>
+
+    </form>
+    </div>
+  </div>
+</div>
+
+<div id="troisiemeSection">
+  <div id="p_LevierMotivation" class="container">
+    <div class="choix_Critere choixSection3">
+    <h5>Notre engagement (lettreMotivation)</h5>
+    <p>Talents Affinity accompagne le collaborateur dans la création et le développement de son projet professionnel. Il devient proactif, acteur de son développement, vous l’accompagner dans sa réflexion sur son employabilité. Avec Talents Affinity, vous sécurisez votre collaborateur dans son parcours tout en générant de la motivation, de l’autonomie et de l’engagement. </p>
+    </div>
+    <a class="btn_interesse" onclick="sauvegardeManager1()" href="#">Ça m'intéresse</a>
+  </div>
+
+  <div id="p_RoleEquipe" class="container">
+    <div class="choix_Critere choixSection3">
+    <h5>Notre engagement (role equipe)</h5>
+    <p>Talents Affinity vous offre un moteur de recherche pour trouver des personnes en affinité sur des compétences et qui correspondent à votre équipe actuelle. Ainsi, nous vous aidons dans l’identification des rôles et des aspirations des collaborateurs. L’application apporte de la confiance, de la responsabilité et de la reconnaissance.
+    Avec Talents Affinity, chacun de vos collaborateurs s’implique dans son parcours professionnel. Vous pourrez convertir ses leviers de motivation en valeur ajoutée grâce à l’identification des rôles, des besoins, des aspirations.
+    </p>
+    </div>
+    <a class="btn_interesse" onclick="sauvegardeManager2()" href="#">Ça m'intéresse</a>
+  </div>
+
+  <div id="p_AnticipationFormation" class="container">
+    <div class="choix_Critere choixSection3">
+    <h5>Notre engagement (anticiper formation)</h5>
+    <p>Notre application permet de cibler les besoins des collaborateurs et de préparer les orientations et les évolutions des différents postes. 
+    En concertation avec vous, il sait quelle sera sa feuille de route pour atteindre ses objectifs.
+    Avec Talents Affinity, vous recevrez en instantané les choix de vos collaborateurs sur leur besoins en formations.
+     
+    Talents Affinity permet de recenser les demandes et besoins en formation de vos collaborateurs. Vous anticipez les évolutions de métiers, facilitez les mobilités et les évolutions transversales et hiérarchiques. Vous avez une vision de la préparation de vos collaborateurs à l’entretien professionnel, et des feuilles routes établies avec les managers lors de cet entretien. 
+    </p>
+    </div>
+    <a class="btn_interesse" onclick="sauvegardeManager3()" href="#">Ça m'intéresse</a>
+  </div>
+
+  <div id="p_Carthographie" class="container">
+    <div class="choix_Critere choixSection3">
+    <h5>Notre engagement (carthographie)</h5>
+    <p>Talents Affinity vous permet de cartographier les compétences détaillées de votre entreprise,  d’apporter une visibilité opérationnelle et d’identifier les besoins en formations. Notre application est entièrement numérique, ainsi, les profils de vos collaborateurs sont mis à jour et évoluent dans le temps. 
+    </p>
+    </div>
+    <a class="btn_interesse" onclick="sauvegardeManager4()" href="#">Ça m'intéresse</a>
+  </div>
+</div>
+
+<div id="sectionContact">
+<h3>Echangeons ensemble</h3>
+        <div class="row">
+          <form method="post" action="php/traitement_contact.php" class="col s12" id="form5">
+          <div class="row">
+            <div class="col s12 alignementFormulaire">
+            Vous êtes intéréssé par : 
+            <div id="interet">
+
+            </div>
+            </div>
+            <div class="col s12">
+              Pour combien de collaborateurs
+              <div class="input-field inline">
+                <select name="nbCollaborateur">
+                  <option value="2-15">2-15</option>
+                  <option value="15-50">15-50</option>
+                  <option value="50-250">50-250</option>
+                </select>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                Vous vous appellez 
+                <div class="input-field inline">
+                  <input id="nomPrenom" name="nomPrenom" placeholder="nom + prenom" class="validate">
+                </div>
+                et vous êtes joigniable à l'adresse 
+                <div class="input-field inline">
+                  <input id="adresse" name="adresse" placeholder="Mail" type="email" class="validate">
+                </div>
+                <br>et/ou par téléphone
+                <div class="input-field inline">
+                  <input id="telephone" name="telepehone" placeholder="Téléphone" class="validate">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Dites nous en plus</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </form>
+          <button type="submit" form="form5" id="btn_Envois" value="Submit">Envoyez</button>
+        </div>
+</div>
+
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    © Copyright 2017 - <a href="mentionslegales.html">Mentions légales</a> - <a href="cgu.html">CGU</a> - <a href="index.html">FR</a>/<a href="EN/index.html">EN</a>
+    </div>
+  </div>
+</footer>
+
+  <!--  Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+    $('select').material_select();
+  });
+    </script>
+    <script type="text/javascript">
+      $('#textarea1').trigger('autoresize');
+    </script>
+  </body>
+</html>
+
+

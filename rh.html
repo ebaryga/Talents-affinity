@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>TalentsAffinity - RH</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/ta.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body onhashchange="changerRS()">
+
+<header id="nav-down">
+<div class="navbar-fixed">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <div id="partieGauche">
+        <a href="." class="brand-logo left"><img src="img/logoTA.png" id="logoTA" ></a>
+      </div>
+      <a href="#" class="button-collapse">
+        <i class="material-icons" id="btn_navigation" onclick="openNav()">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="coindesdsi.html">Coin des DSI</a></li>
+        <li><a href="https://medium.com/@TalentsAffinity_53620">Blog</a></li>
+        <li><a href="contact.html" id="btn_contact">Contact</a></li>
+      </ul>
+      <ul class="tabs1 tabs-transparent">
+        <li class="tab1"><a href="manager.html">Manager</a></li>
+        <li class="tab1"><a class="active" href="rh.html">RH</a></li>
+        <li class="tab1"><a href="ccm.html">Comment ça marche ?</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content" id="mobiletest">
+    <a href="quisommesnous.html">Qui sommes nous ?</a></li>
+    <a href="tarifs.html">Tarifs</a></li>
+    <a href="coindudsi.html">Coin du DSI</a></li>
+    <a href="">Blog</a></li>
+    <a href="contact.html">Contact</a></li>
+  </div>
+</div>
+
+<aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/talentsaffinity" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/TalentsAffinity" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/talents-affinity" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+</aside>
+
+<div id="menu" class="dotstyle dotstyle-scaleup">
+  <ul>
+    <li data-menuanchor="choix" class=""><a href="#choix">Home</a></li>
+    <li data-menuanchor="menu_GPEC"><a href="#menu_GPEC"><span> GPEC</span></a></li>
+    <li data-menuanchor="menu_Formations"><a href="#menu_Formations">Formations</a></li>
+    <li data-menuanchor="menu_Experience"><a href="#menu_Experience">EX collaborateur</a></li>
+    <li data-menuanchor="menu_RH"><a href="#menu_RH">RH</a></li>
+  </ul>
+</div>
+
+
+  <div class="parallax">
+  </div>
+
+
+<div id="ActiveSlide">
+  <div class="section container active" id="section0">
+      <div class="container">
+        <div class="row left">
+          <p class="light" >   
+            Les Ressources Humaines reviennent dans le cockpit de l'entreprise. Talents Affinity offre l'opportunité de pouvoir agir sur la stratégie et aligner la vision du chef d'entreprise avec la réalité du capital humain en place.
+            <br/>
+            <br>
+            Choisissez un enjeu auquel vous souhaitez répondre :
+          </p>
+        </div>
+        <div class="left-align light" id="choixVisiteur" >
+            <a class="btn" href="#menu_GPEC">GPEC</a>
+            <a class="btn" href="#menu_Formations">Formations</a>
+            <a class="btn" href="#menu_Experience" >EX Collaborateur</a>
+            <a class="btn" href="#menu_RH" >RH de proximité</a>
+        </div>
+      </div>
+  </div> 
+  <div class="section">
+    <div class="global">
+        <div class="gauche">
+            <a onclick="sauvegardeRH1()" id="btn_RH_CN1" class="btn_contactezNous" >Contactez-nous !</a>
+        </div><!-- correction whitespace
+      
+       --><div class="droite">
+        <h5>GPEC et cartographie</h5>
+        <p> <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+    <div id="CN_Mobile">
+    <a id="btn_mobile1" onclick="sauvegardeRH1()" class="btn_contactezNous btn_CN_Mobile" >Contactez-nous !</a>
+    </div>
+    </div>
+  </div>
+  <div class="section">
+          <div class="global">
+            <div class="gauche">
+            <a id="btn_RH_CN2" onclick="sauvegardeRH2()" class="btn_contactezNous" >Contactez-nous !</a>
+          </div><!-- correction whitespace
+        
+         --><div class="droite">
+          <h5>Anticiper les besoins en formations</h5>
+          </div>
+          <div id="CN_Mobile">
+          <a id="btn_mobile2" onclick="sauvegardeRH2()" class="btn_contactezNous btn_CN_Mobile" >Contactez-nous !</a>
+          </div>
+      </div>
+  </div>
+  <div class="section">
+          <div class="global">
+            <div class="gauche">
+            <a id="btn_RH_CN3" onclick="sauvegardeRH3()" class="btn_contactezNous" >Contactez-nous !</a>
+          </div><!-- correction whitespace
+        
+         --><div class="droite">
+          <h5 id="titre_Experience">Favoriser l'expèrience collaborateur</h5>
+          </div>
+          <div id="CN_Mobile">
+          <a id="btn_mobile3" onclick="sauvegardeRH3()" class="btn_contactezNous btn_CN_Mobile" >Contactez-nous !</a>
+          </div>
+      </div>
+  </div>
+  <div class="section">
+          <div class="global">
+            <div class="gauche">
+            <a id="btn_RH_CN4" onclick="sauvegardeRH4()" class="btn_contactezNous" >Contactez-nous !</a>
+          </div><!-- correction whitespace
+        
+         --><div class="droite">
+          <h5>RH de proximité</h5>
+          </div>
+          <div id="CN_Mobile">
+          <a id="btn_mobile4" onclick="sauvegardeRH4()" class="btn_contactezNous btn_CN_Mobile" >Contactez-nous !</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!--  Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#ActiveSlide').fullpage({
+              anchors: ['choix', 'menu_GPEC', 'menu_Formations', 'menu_Experience', 'menu_RH'],
+              menu: '#menu',
+            });
+        });
+    </script>
+    <script src="js/changeRS.js"></script>
+  </body>
+</html>
+
+

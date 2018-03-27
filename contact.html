@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Contact</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/ta.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<header id="nav-down">
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <div id="partieGauche">
+        <a href="." class="brand-logo left"><img src="img/logoTA.png" id="logoTA" ></a>
+            <ul class="left hide-on-med-and-down"" id="phraseAccroche">
+              <li >L'application qui aide à réveler et construire les projets professionnels</li>
+            </ul>
+      </div>
+      <a href="#" class="button-collapse">
+        <i class="material-icons" id="btn_navigation" onclick="openNav()">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="coindesdsi.html">Coin des DSI</a></li>
+        <li><a href="https://medium.com/@TalentsAffinity_53620">Blog</a></li>
+        <li><a class="active" href="contact.html" id="btn_contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</header>
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <a href="quisommesnous.html">Qui sommes nous ?</a></li>
+    <a href="tarifs.html">Tarifs</a></li>
+    <a href="coindudsi.html">Coin du DSI</a></li>
+    <a href="">Blog</a></li>
+    <a href="contact.html">Contact</a></li>
+  </div>
+</div>
+
+
+<h3 id="echangeonsEnsemble">Echangeons ensemble</h3>
+<div id="formulaireContact" class="container">
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Vous êtes intéréssé par Talents Affinity ?</div>
+      <div class="collapsible-body" id="formulaireUn">
+        <div class="row">
+          <form method="post" action="php/traitement_contact.php" class="col s12" id="form1">
+          <div class="row">
+            <div class="col s12">
+              Pour combien de collaborateurs
+              <div class="input-field inline">
+                <select name="nbCollaborateur">
+                  <option value="2-15">2-15</option>
+                  <option value="15-50">15-50</option>
+                  <option value="50-250">50-250</option>
+                </select>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                Vous vous appellez 
+                <div class="input-field inline">
+                  <input id="nomPrenom" name="nomPrenom" placeholder="nom + prenom" class="validate">
+                </div>
+                et vous êtes joigniable à l'adresse 
+                <div class="input-field inline">
+                  <input id="adresse" name="adresse" placeholder="Mail" type="email" class="validate">
+                </div>
+                et/ou par téléphone
+                <div class="input-field inline">
+                  <input id="telephone" name="telepehone" placeholder="Téléphone" class="validate">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Dites nous en plus</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </form>
+          <button type="submit" form="form1" id="btn_Envois" value="Submit">Envoyez</button>
+        </div>
+      </div>
+
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Vous avez une autre demande ?</div>
+      <div class="collapsible-body" id="formulaireDeux">
+        <div class="row">
+          <form method="post" action="php/traitement_contact1.php" class="col s12" id="form2">
+            <div class="row">
+              <div class="col s12">
+                Vous vous appellez 
+                <div class="input-field inline">
+                  <input id="nomPrenom1" name="nomPrenom1" placeholder="nom + prenom" type="email" class="validate">
+                </div>
+                et vous êtes joigniable à l'adresse 
+                <div class="input-field inline">
+                  <input id="email1" name="email1" placeholder="Mail" type="email" class="validate">
+                </div>
+                et/ou par téléphone 
+                <div class="input-field inline">
+                  <input id="telephone1" name="telepehone1" placeholder="Téléphone" type="email" class="validate">
+                </div>
+              </div>
+                Vous représentez l'entreprise 
+                <div class="input-field inline">
+                  <input id="entreprise1" name="entreprise1" type="email" class="validate">
+                </div>
+            </div>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea2" name="textarea2" class="materialize-textarea basOrange"></textarea>
+                    <label for="textarea2">Décrivez votre demande</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </form>
+          <button type="submit" form="form1" id="btn_Envois" value="Submit">Envoyez</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    © Copyright 2017 - <a href="mentionslegales.html">Mentions légales</a> - <a href="cgu.html">CGU</a> - <a href="index.html">FR</a>/EN
+    </div>
+  </div>
+</footer>
+
+
+  <!--  Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+    $('select').material_select();
+  });
+    </script>
+    <script type="text/javascript">
+      $('#textarea1').trigger('autoresize');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>TalentsAffinity</title>
+
+  	<!-- CSS  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
+	<link href="css/ta.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<header id="nav-down">
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <div id="partieGauche">
+        <a href="." class="brand-logo left"><img src="img/logoTA.png" id="logoTA" ></a>
+            <ul class="left hide-on-med-and-down"" id="phraseAccroche">
+              <li >L'application qui aide à réveler et construire les projets professionnels</li>
+            </ul>
+      </div>
+      <a href="#" class="button-collapse">
+        <i class="material-icons" id="btn_navigation" onclick="openNav()">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="coindesdsi.html">Coin des DSI</a></li>
+        <li><a href="https://medium.com/@TalentsAffinity_53620">Blog</a></li>
+        <li><a href="contact.html" id="btn_contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</header>
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <a href="quisommesnous.html">Qui sommes nous ?</a></li>
+    <a href="tarifs.html">Tarifs</a></li>
+    <a href="coindudsi.html">Coin du DSI</a></li>
+    <a href="">Blog</a></li>
+    <a href="contact.html">Contact</a></li>
+  </div>
+</div>
+
+  <div id="presentationTA" class="parallax-container">
+      <div class="container">
+        <br><br>
+        <div class="row left">
+          <p class="light">   
+            Talents Affinity est une application web simple, légère et flexible qui amène une approche innovante de la gestion des compétences dans les entreprises. Basée sur la stratégie managériale collaborative du "Bottom Up Management", elle transforme chaque collaborateur en une personne motivée et engagée.
+            <br/>
+            <br>
+            Talents Affinity vous offre une relation durable avec chaque collaborateur et débloque des leviers de croissance vers l'innovation. 
+          </p>
+        </div>
+        <div class="row center">
+        	<h5>Vous n'avez que trois minutes devant vous ?</h5>
+        	<button class="js-modal-btn" id="btn_cestParti" data-video-id="3P4ujTYmFr0">C'est parti !</button>
+        </div>
+        <br><br>
+      </div> 
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 class="left" id="titreVousEtes"><i class="mdi-content-send brown-text"></i>Vous êtes ?</h4>
+        </div>
+            <p class="left-align light" id="choixVisiteur" ">
+            <a href="manager.html" class="btn">Manager</a>
+            <a href="rh.html" class="btn">RH</a>
+            <a class="btn">Comment ça marche ?</a>
+          </p>
+      </div>
+  </div>
+
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    © Copyright 2017 - <a href="mentionslegales.html">Mentions légales</a> - <a href="cgu.html">CGU</a> - <a href="index.html">FR</a>/<a href="EN/index.html">EN</a>
+    </div>
+  </div>
+</footer>
+
+  <!--  Scripts-->
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal-video.min.js"></script>
+    <script type="text/javascript">
+    	$(".js-modal-btn").modalVideo();
+    </script>
+  </body>
+</html>
