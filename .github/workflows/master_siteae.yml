@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'SiteAE'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D48CAAF8A8C349F993C3E006C8FFA832 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E47D85DC040743EB94793ADB8A7E636B }}
           package: .
